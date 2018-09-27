@@ -37,8 +37,9 @@ function Player(){
         }
         else{
             this.face = this.sprite.getDirection();
+
             this.sprite.setSpeed(0,this.face);
-            if( this.face == 90){
+            if(this.face == 0 || this.face == 90){
                 this.sprite.changeAnimation("idleDown");
             }
             else if(this.face < -90){
@@ -54,7 +55,6 @@ function Player(){
         if(keyIsDown(keyCodes.space)){
             this.craft();
         }
-        console.log(this.sprite.getDirection());
     }
     this.show=function(){
         if(this.items.axe!= 0){
