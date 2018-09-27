@@ -11,7 +11,7 @@ var stoneDefault;
 var axeDefault;
 //#endregion
 //#region keyCodes
-var keyCodes={s:83, w:87, a:65, d:68, space:32};
+var keyCodes={s:83, w:87, a:65, d:68, space:32, q:87};
 //#endregion
 //#region Images
 var frame;
