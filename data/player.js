@@ -52,8 +52,11 @@ function Player(){
                 this.sprite.changeAnimation("idleRight");
             }
         }
-        if(keyIsDown(keyCodes.space)){
+        if(keyIsDown(keyCodes.q)){
             this.craft();
+        }
+        if(keyIsDown(keyCodes.space)){
+            
         }
     }
     this.show=function(){

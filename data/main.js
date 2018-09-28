@@ -4,14 +4,14 @@ var player;
 var stone, stones;
 //#endregion
 //#region animation Variables
-var playerRight, playerLeft, playerUp, playerDown;
+var playerRight, playerLeft, playerUp, playerDown,playerAttackRight, playerAttackLeft;
 var playerIdles=[];
 
 var stoneDefault;
 var axeDefault;
 //#endregion
 //#region keyCodes
-var keyCodes={s:83, w:87, a:65, d:68, space:32, q:87};
+var keyCodes={s:83, w:87, a:65, d:68, space:32, q:81};
 //#endregion
 //#region Images
 var frame;
@@ -61,7 +61,7 @@ function draw(){
     camera.position.y = player.sprite.position.y;
     ///////////////////////////////////////////drawing//////////////////////////////////////////////
     background(255);
-    drawSprites();
+    drawSprites(stones);
     player.show();
     //////////////////////////////////////////drawing//////////////////////////////////////////////
     if(stones.collide(player.sprite, collect)){
